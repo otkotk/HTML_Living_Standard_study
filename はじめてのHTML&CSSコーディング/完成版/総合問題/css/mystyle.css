@@ -1,0 +1,215 @@
+@charset "utf8";
+body{
+	font-family:"メイリオ","Hiragino Sans",sans-serif;
+	color:#ffffff;
+	background-color:#000000;
+	line-height:1.5;
+	margin:0;
+	padding:0;
+}
+header h1{
+	font-family:"Cambria","Palatino",serif;
+	font-size:200%;
+	color:#ccffff;
+	margin:0;
+}
+ul{
+	list-style-type:none;
+	margin-top:0;
+	padding:0;
+}
+nav{
+	background-color:#006666;
+}
+nav ul{
+	padding:10px 0;
+}
+nav li{
+	display:inline;
+}
+article{
+	position:relative;
+}
+.catch{
+	position:absolute;
+	top:40px;
+	left:50px;
+	text-shadow:0 5px 10px #000000;
+	background-color:rgba(0,0,0,0.5);
+	padding:15px;
+}
+.new{
+	font-size:80%;
+	color:#333333;
+	background-image:linear-gradient(to bottom,#ccffff,#66cc99);
+	border-radius:10px;
+	padding-left:15px;
+	padding-right:15px;
+}
+aside h1{
+	font-size:120%;
+	border-bottom:2px dotted #666666;
+	margin:0;
+}
+aside li{
+	border-bottom:1px dotted #666666;
+	height:53px;
+}
+.shop{
+	display:block;
+	font-size:90%;
+	color:#ccffff;
+	font-weight:bold;
+}
+aside img{
+	float:left;
+	margin-right:10px;
+}
+aside li{
+	clear:both;
+}
+footer{
+	text-align:center;
+	border-top:1px solid #006666;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+.page{
+	padding-left:10px;
+	padding-right:10px;
+}
+ol li{
+	display: inline;
+	font-size:80%;
+	margin-right:5px;
+}
+ol{
+	padding-left:0;
+}
+.img-sub{
+	box-shadow:5px 5px 0px 0px #999999;
+}
+table{
+	font-size:90%;
+	color:#333333;
+	margin-bottom:20px;
+	border:1px solid #333333;
+	border-collapse:collapse;
+}
+th{
+	background-color:#ccccff;
+	width:20%;
+	padding:10px;
+	border:1px solid #333333;
+}
+td{
+	background-color:#ffffff;
+	padding:10px;
+	border:1px solid #333333;
+}
+caption{
+	color:#66cccc;
+	font-weight:bold;
+}
+.h1-sub{
+	font-size:180%;
+	margin:0;
+	padding-left:10px;
+	border-left:20px solid #666666;
+}
+video{
+	max-width:100%;
+	height:auto;
+}
+input{
+	display:block;
+	width:440px;
+}
+textarea{
+	display:block;
+	width:660px;
+	height:150px;
+}
+button{
+	width:150px;
+	height:50px;
+	padding:10px;
+}
+nav a{
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:bold;
+	padding:10px;
+}
+nav a:hover{
+	color:#000000;
+	background-color:#99ffcc;
+}
+aside a{
+	display:block;
+	color:#ffffff;
+	text-decoration:none;
+}
+header h1 a,section a{
+	color:#ccffff;
+	text-decoration:none;
+}
+ol a{
+	color:#ffcc66;
+}
+
+/* 1024px以上の場合 */ 
+@media(min-width:1024px){
+.placement{
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.kiji{
+	float:left;
+	width:64%;
+}
+aside{
+	float:right;
+}
+footer{
+	clear:both;
+}
+}
+
+/* 600px以下の場合 */ 
+@media(max-width:600px){
+header h1{
+	font-size:150%;
+}
+nav ul{
+	font-size:70%;
+}
+.catch{
+	top:20px;
+	left:10px;
+	padding:5px;
+}
+article{
+	margin-left:8px;
+	margin-right:8px;
+}
+th,td{
+	display:block;
+	width:auto;
+}
+input,textarea{
+	width:330px;
+}
+}
+
+/* プリント出力 */
+@media print{
+.catch{
+	font-weight:bold;
+	color:#000000;
+	text-shadow:none;
+}
+}
