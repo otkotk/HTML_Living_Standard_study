@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/* main css start */
+body{
+    font-family: "メイリオ","Hiragino Sans","sans-serif";
+    color: white;
+    background-color: black;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+header > h1{
+    font-family: "Cambria","Palatino","serif";
+    font-size: 200%;
+    color: #ccffff;
+    margin: 0;
+}
+ul > li{
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+}
+nav{
+    background-color: #006666;
+}
+nav > ul{
+    padding: 10px 0;
+}
+nav > ul > li{
+    display: inline;
+}
+article{
+    position: relative;
+}
+article > .catch{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    text-shadow: 0px 5px 10px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
+section .new{
+    font-size: 80%;
+    color: #333333;
+    background: linear-gradient(to top, #ccffff, #66cc99);
+    border-radius: 10px;
+    /* padding-right: 15px;
+    padding-left: 15px; */
+    padding: 5px 15px;
+}
+aside > h1{
+    font-size: 120%;
+    border-bottom: dotted 2px #666666;
+    margin: 0;
+}
+aside > ul > li{
+    border-bottom: dotted 1px #666666;
+    height: 53px;
+}
+span.shop{
+    display: block;
+    font-size: 90%;
+    color: #ccffff;
+    font-weight: bold;
+}
+aside > ul > li > img{
+    float: left;
+    margin-right: 10px;
+}
+aside > ul > li{
+    clear: both;
+}
+footer{
+    text-align: center;
+    border-top: solid 1px #006666;
+}
+/* main css end */
