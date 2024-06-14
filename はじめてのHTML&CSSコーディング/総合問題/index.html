@@ -2,16 +2,23 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
+        <meta name="discription" content="どこか懐かしい商店街。各種イベントや店舗情報など盛りだくさんのWebサイトです。">
+        <meta name="viewport" content="width=device-width">
         <title>トップページ:城川商店街</title>
         <link rel="stylesheet" href="css/mystyle.css">
+        <script type="text/javascript">
+            if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+                document.write('<link rel="stylesheet" type="text/css" href="css/mystyle_sp.css">');
+            }
+        </script>
     </head>
 
     <body>
 
         <header>
-            <h1>SHIROKAWA Shopping Street</h1>
+            <h1 class="placement">SHIROKAWA Shopping Street</h1>
             <nav>
-                <ul>
+                <ul class="placement">
                     <li>トップ</li>
                     <li>今月のピックアップ品</li>
                     <li>イベント</li>
@@ -20,20 +27,22 @@
             </nav>
         </header>
 
-        <article>
-            <img src="image/shop.jpg" alt="商店街のイメージ" width="960px" height="638px">
-            <div class="catch">
-                <h1>ようこそ城川商店街へ</h1>
-                <p>城川商店街で、あなたの探しものがきっと見つかる。</p>
+        <article class="placement">
+            <div class="kiji">
+                <img src="image/shop.jpg" alt="商店街のイメージ" width="960px" height="638px">
+                <div class="catch">
+                    <h1>ようこそ城川商店街へ</h1>
+                    <p>城川商店街で、あなたの探しものがきっと見つかる。</p>
+                </div>
+                <section class="page">
+                    <h2><span class="new">新着情報</span></h2>
+                    <ul>
+                        <li><time datetime="2024-03-20">03/20</time> イベント第2弾 春の大抽選会が始まりました。</li>
+                        <li><time datetime="2024-03-10">03/10</time> 手作り体験「オリジナルサンドイッチを作ってみよう」参加者募集中。</li>
+                        <li><time datetime="2024-03-01">03/01</time> フラワーショップ「Flower Castle」がオープンしました。</li>
+                    </ul>
+                </section>
             </div>
-            <section>
-                <h2><span class="new">新着情報</span></h2>
-                <ul>
-                    <li><time datetime="2024-03-20">03/20</time> イベント第2弾 春の大抽選会が始まりました。</li>
-                    <li><time datetime="2024-03-10">03/10</time> 手作り体験「オリジナルサンドイッチを作ってみよう」参加者募集中。</li>
-                    <li><time datetime="2024-03-01">03/01</time> フラワーショップ「Flower Castle」がオープンしました。</li>
-                </ul>
-            </section>
             <aside>
                 <h1>今月のピックアップ品</h1>
                 <ul>

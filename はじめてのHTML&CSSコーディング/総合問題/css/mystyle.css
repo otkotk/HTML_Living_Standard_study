@@ -15,7 +15,7 @@ header > h1{
     color: #ccffff;
     margin: 0;
 }
-ul > li{
+ul{
     list-style-type: none;
     margin-top: 0;
     padding: 0;
@@ -23,16 +23,16 @@ ul > li{
 nav{
     background-color: #006666;
 }
-nav > ul{
+nav ul{
     padding: 10px 0;
 }
-nav > ul > li{
+nav ul li{
     display: inline;
 }
 article{
     position: relative;
 }
-article > .catch{
+article .catch{
     position: absolute;
     top: 40px;
     left: 50px;
@@ -49,12 +49,12 @@ section .new{
     padding-left: 15px; */
     padding: 5px 15px;
 }
-aside > h1{
+aside h1{
     font-size: 120%;
     border-bottom: dotted 2px #666666;
     margin: 0;
 }
-aside > ul > li{
+aside ul li{
     border-bottom: dotted 1px #666666;
     height: 53px;
 }
@@ -64,15 +64,127 @@ span.shop{
     color: #ccffff;
     font-weight: bold;
 }
-aside > ul > li > img{
+aside ul li img{
     float: left;
     margin-right: 10px;
 }
-aside > ul > li{
+aside ul li{
     clear: both;
 }
 footer{
     text-align: center;
     border-top: solid 1px #006666;
 }
+article img{
+    max-width: 100%;
+    height: auto;
+}
+.page{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+ol li{
+    display: inline;
+    font-size: 80%;
+    margin-right: 5px;
+}
+ol{
+    padding-left: 0;
+}
+.img-sub{
+    box-shadow: 5px 5px 0px 0px #999999;
+}
+table{
+    font-size: 90%;
+    color: #333333;
+    margin-bottom: 20px;
+    border: solid 1px #333333;
+    border-collapse: collapse;
+}
+table th{
+    background-color: #ccccff;
+    width: 20%;
+    padding: 10px;
+    border: solid 1px #333333;
+}
+table td{
+    background-color: white;
+    padding: 10px;
+    border: solid 1px #333333;
+}
+table caption{
+    color: #66cccc;
+    font-weight: bold;
+}
+.h1-sub{
+    font-size: 180%;
+    margin: 0;
+    padding-left: 10px;
+    border-left: solid 20px #666666;
+}
 /* main css end */
+
+/* ウィンドウサイズ 1024px 以上の場合適用 start */
+@media(min-width: 1024px){
+    .placement{
+        width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /* article.placement{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .kiji{
+        flex-basis: 64%;
+    } */
+    .kiji{
+        float: left;
+        width: 64%;
+    }
+    aside{
+        float: right;
+    }
+    footer{
+        clear: both;
+    }
+}
+/* ウィンドウサイズ 1024px 以上の場合適用 end */
+
+/* ウィンドウサイズ 600px 以下の場合適用 start */
+@media(max-width: 600px){
+    header h1{
+        font-size: 150%;
+    }
+    header nav ul li{
+        font-size: 70%;
+    }
+    article .catch{
+        top: 20px;
+        left: 10px;
+        padding: 5px;
+    }
+    article{
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+    table{
+        width: 100%;
+    }
+    table th, td{
+        display: block;
+        width: auto;
+    }
+}
+/* ウィンドウサイズ 600px 以上の場合適用 end */
+
+/* 印刷用 start */
+@media print{
+    .catch{
+        font-weight: bold;
+        color: black;
+        text-shadow: none;
+    }
+}
+/* 印刷用 end */

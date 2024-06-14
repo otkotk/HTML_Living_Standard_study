@@ -1,0 +1,21 @@
+/* ウィンドウサイズ 600px 以下の場合適用 start */
+@media(max-width: 600px){
+    header h1{
+        font-size: 150%;
+    }
+    header nav ul li{
+        font-size: 70%;
+    }
+    article .catch{
+        /* top: 0;
+        right: 0; */
+        left: 0;
+        /* bottom: 0; */
+        margin: auto 8px;
+        padding: 5px;
+    }
+    article{
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+}
