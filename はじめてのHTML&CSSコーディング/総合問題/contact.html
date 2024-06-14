@@ -38,6 +38,23 @@
         <section>
             <h2><span class="new">フォームによるお問い合わせ</span></h2>
             <p>以下のフォームにご記入の上、送信してください。</p>
+            <form action="">
+                <p>
+                    <label for="name">お名前(必須)</label>
+                    <input type="text" name="name" id="name" placeholder="全角で入力してください。" required>
+                </p>
+                <p>
+                    <label for="email">メールアドレス(必須)</label>
+                    <input type="email" name="email" id="email" placeholder="半角で入力してください。" required>
+                </p>
+                <p>
+                    <label for="comment">コメント(必須)</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="具体的な内容を入力してください。" required></textarea>
+                </p>
+                <p>
+                    <button type="submit">送信</button>
+                </p>
+            </form>
         </section>
     </article>
     <footer>
