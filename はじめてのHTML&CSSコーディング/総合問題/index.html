@@ -1,65 +1,92 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="discription" content="どこか懐かしい商店街。各種イベントや店舗情報など盛りだくさんのWebサイトです。">
-        <meta name="viewport" content="width=device-width">
-        <title>トップページ:城川商店街</title>
-        <link rel="stylesheet" href="css/mystyle.css">
-        <script type="text/javascript">
-            if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
-                document.write('<link rel="stylesheet" type="text/css" href="css/mystyle_sp.css">');
-            }
-        </script>
-    </head>
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="discription" content="どこか懐かしい商店街。各種イベントや店舗情報など盛りだくさんのWebサイトです。">
+    <meta name="viewport" content="width=device-width">
+    <title>トップページ:城川商店街</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script type="text/javascript">
+        if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+            document.write('<link rel="stylesheet" type="text/css" href="css/mystyle_sp.css">');
+        }
+    </script>
+</head>
 
-        <header>
-            <h1 class="placement">SHIROKAWA Shopping Street</h1>
-            <nav>
-                <ul class="placement">
-                    <li>トップ</li>
-                    <li>今月のピックアップ品</li>
-                    <li>イベント</li>
-                    <li>お問い合わせ</li>
-                </ul>
-            </nav>
-        </header>
+<body>
 
-        <article class="placement">
-            <div class="kiji">
-                <img src="image/shop.jpg" alt="商店街のイメージ" width="960px" height="638px">
-                <div class="catch">
-                    <h1>ようこそ城川商店街へ</h1>
-                    <p>城川商店街で、あなたの探しものがきっと見つかる。</p>
-                </div>
-                <section class="page">
-                    <h2><span class="new">新着情報</span></h2>
-                    <ul>
-                        <li><time datetime="2024-03-20">03/20</time> イベント第2弾 春の大抽選会が始まりました。</li>
-                        <li><time datetime="2024-03-10">03/10</time> 手作り体験「オリジナルサンドイッチを作ってみよう」参加者募集中。</li>
-                        <li><time datetime="2024-03-01">03/01</time> フラワーショップ「Flower Castle」がオープンしました。</li>
-                    </ul>
-                </section>
+    <header>
+        <h1 class="placement"><a href="index.html">SHIROKAWA Shopping Street</a></h1>
+        <nav>
+            <ul class="placement">
+                <li><a href="index.html">トップ</a></li>
+                <li><a href="shop01.html">今月のピックアップ品</a></li>
+                <li><a href="event.html">イベント</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article class="placement">
+        <div class="kiji">
+            <img src="image/shop.jpg" alt="商店街のイメージ" width="960px" height="638px">
+            <div class="catch">
+                <h1>ようこそ城川商店街へ</h1>
+                <p>城川商店街で、あなたの探しものがきっと見つかる。</p>
             </div>
-            <aside>
-                <h1>今月のピックアップ品</h1>
+            <section class="page">
+                <h2><span class="new">新着情報</span></h2>
                 <ul>
-                    <li><img src="image/soba-s.jpg" alt="そば処みやたの写真" width="80px" height="53px"><span class="shop">城川が誇る老舗の手打ちそば処みやた</span></li>
-                    <li><img src="image/baguette-s.jpg" alt="ブーランジェリー城川の写真" width="80px" height="53px"><span class="shop">大人気の焼きたてバゲットブーランジェリー城川</span></li>
-                    <li><img src="image/flower-s.jpg" alt="Flower Castleの写真" width="80px" height="53px"><span class="shop">毎日の生活に花をFlower Castle</span></li>
-                    <li><img src="image/beer-s.jpg" alt="S-BREWINGの写真" width="80px" height="53px"><span class="shop">クラフトビール5種類以上を常備S-BREWING</span></li>
-                    <li><img src="image/glasses-s.jpg" alt="坂口眼鏡店の写真" width="80px" height="53px"><span class="shop">プロが選ぶこだわりの眼鏡坂口眼鏡店</span></li>
+                    <li><time datetime="2024-03-20">03/20</time> イベント第2弾 春の大抽選会が始まりました。</li>
+                    <li><time datetime="2024-03-10">03/10</time> 手作り体験「<a href="event.html">オリジナルサンドイッチを作ってみよう</a>」参加者募集中。</li>
+                    <li><time datetime="2024-03-01">03/01</time> フラワーショップ「<a href="shop03.html">Flower Castle</a>」がオープンしました。</li>
                 </ul>
-            </aside>
-        </article>
-        
-        <footer>
-            <p>城川商店街振興組合</p>
-            <address>〒212-0014 神奈川県川崎市幸区大宮町X-X<br>
+            </section>
+        </div>
+        <aside>
+            <h1>今月のピックアップ品</h1>
+            <ul>
+                <li>
+                    <a href="shop01.html">
+                        <img src="image/soba-s.jpg" alt="そば処みやたの写真" width="80px" height="53px">
+                        <span class="shop">城川が誇る老舗の手打ちそば処みやた</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="shop02.html">
+                        <img src="image/baguette-s.jpg" alt="ブーランジェリー城川の写真" width="80px" height="53px">
+                        <span class="shop">大人気の焼きたてバゲットブーランジェリー城川</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="shop03.html">
+                        <img src="image/flower-s.jpg" alt="Flower Castleの写真" width="80px" height="53px">
+                        <span class="shop">毎日の生活に花をFlower Castle</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="shop04.html">
+                        <img src="image/beer-s.jpg" alt="S-BREWINGの写真" width="80px" height="53px">
+                        <span class="shop">クラフトビール5種類以上を常備S-BREWING</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="shop05.html">
+                        <img src="image/glasses-s.jpg" alt="坂口眼鏡店の写真" width="80px" height="53px">
+                        <span class="shop">プロが選ぶこだわりの眼鏡坂口眼鏡店</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </article>
+
+    <footer>
+        <p>城川商店街振興組合</p>
+        <address>〒212-0014 神奈川県川崎市幸区大宮町X-X<br>
             shirokawa@shirokawa.xx.xx</address>
-            <small>&copy; 2024 城川商店街振興組合 All Right Reserved.</small>
-        </footer>
-    </body>
+        <small>&copy; 2024 城川商店街振興組合 All Right Reserved.</small>
+    </footer>
+</body>
+
 </html>
